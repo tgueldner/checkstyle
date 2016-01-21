@@ -22,7 +22,7 @@
 
   <groupId>com.puppycrawl.tools</groupId>
   <artifactId>checkstyle</artifactId>
-  <version>6.12.1</version>
+  <version>6.12.1-Patched</version>
   <packaging>jar</packaging>
 
   <name>checkstyle</name>
@@ -166,9 +166,9 @@
   </prerequisites>
 
   <scm>
-    <connection>scm:git:git@github.com:checkstyle/checkstyle.git</connection>
-    <developerConnection>scm:git:git@github.com:checkstyle/checkstyle.git</developerConnection>
-    <url>https://github.com/checkstyle/checkstyle</url>
+    <connection>scm:git:git@github.com:tgueldner/checkstyle.git</connection>
+    <developerConnection>scm:git:git@github.com:tgueldner/checkstyle.git</developerConnection>
+    <url>https://github.com/tgueldner/checkstyle</url>
   </scm>
   <issueManagement>
     <system>GitHub Issues</system>
@@ -744,7 +744,7 @@
               </target>
             </configuration>
           </execution>
-          <execution>
+          <!-- execution>
             <id>ant-phase-verify</id>
             <phase>verify</phase>
             <goals>
@@ -758,7 +758,7 @@
                 <ant antfile="config/ant-phase-verify.xml" />
               </target>
             </configuration>
-          </execution>
+          </execution-->
         </executions>
         <dependencies>
           <dependency>
